@@ -7,6 +7,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -38,12 +39,14 @@ import java.util.stream.Collectors;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 Button btn;
+    View image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn = (Button)findViewById(R.id.button);
        btn.setOnClickListener(this);
+       image = findViewById(R.id.imageView);
 
     }
     @Override

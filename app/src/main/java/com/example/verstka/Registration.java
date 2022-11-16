@@ -110,10 +110,13 @@ public class Registration extends AppCompatActivity {
         // Check which checkbox was clicked
         switch(view.getId()) {
             case R.id.renem:
-                if (checked)
+                if (checked) {
+                    renem.setButtonDrawable(getDrawable(R.drawable.back_bledn));
                     renem.setBackground(getDrawable(R.drawable.checked));
+                }
                 else
-                    renem.setBackground(getDrawable(R.drawable.unchecked));
+                { renem.setButtonDrawable(getDrawable(R.drawable.back_bledn));
+                    renem.setBackground(getDrawable(R.drawable.unchecked));}
                 break;
 
         }
