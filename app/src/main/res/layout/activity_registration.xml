@@ -112,17 +112,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
+
     <CheckBox
         android:id="@+id/renem"
-        android:layout_width="295dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/checks"
+
         android:button="@drawable/checks"
-        android:padding="10dp"
+
+        android:onClick="onCheckboxClicked"
+
+        android:scaleX="0.5"
+
+        android:scaleY="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordTwo" />
+
+
+    <TextView
+        android:id="@+id/txtLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
         android:text="I agree with terms &amp; conditions"
-        android:textColor="#E1FA00"
-        android:textSize="14sp"
+        android:textColor="#F4DC04"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPasswordTwo" />
 

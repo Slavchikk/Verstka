@@ -78,8 +78,24 @@ public class Autorization extends AppCompatActivity  {
 
 
     }
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
 
-  private  void colorBtn(){
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.renem:
+                if (checked)
+                renem.setBackground(getDrawable(R.drawable.checked));
+            else
+                    renem.setBackground(getDrawable(R.drawable.unchecked));
+                break;
+
+        }
+    }
+
+
+    private  void colorBtn(){
         if(!email.getText().toString().isEmpty()&&!password.getText().toString().isEmpty()){
             Login.setBackground(getResources().getDrawable(R.drawable.button_b));
             Login.setTextColor(getResources().getColor(R.color.white));

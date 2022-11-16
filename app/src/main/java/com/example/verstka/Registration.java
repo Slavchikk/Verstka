@@ -100,13 +100,23 @@ public class Registration extends AppCompatActivity {
                 colorBtn();
             }
         });
-        renem.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                colorBtn();
-            }
-        });
 
+
+    }
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.renem:
+                if (checked)
+                    renem.setBackground(getDrawable(R.drawable.checked));
+                else
+                    renem.setBackground(getDrawable(R.drawable.unchecked));
+                break;
+
+        }
     }
 
     private  void colorBtn(){

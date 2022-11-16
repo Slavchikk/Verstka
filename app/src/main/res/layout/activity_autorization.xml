@@ -82,18 +82,43 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-            <CheckBox
-                android:id="@+id/renem"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:button="@drawable/checks"
-                android:padding="10dp"
-                android:textColor="#E1FA00"
-                android:text="Remember Password"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtFogPas" />
+    <TextView
+        android:id="@+id/txtFogPas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="172dp"
+        android:text="Remember password"
+        android:textColor="#E1FA00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <CheckBox
+                     android:id="@+id/renem"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:button="@drawable/checks"
+                     android:scaleX="0.5"
+                     android:scaleY="0.5"
+
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentEnd="true"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginEnd="15dp"
+
+                    android:background="@drawable/checks"
+
+                 android:onClick="onCheckboxClicked"
+
+                     android:layout_marginStart="40dp"
+
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@+id/txtFogPas" />
+
+
 
             <android.widget.Button
                 android:onClick="onClick"
