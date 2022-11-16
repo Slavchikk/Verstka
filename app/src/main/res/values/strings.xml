@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Verstka</string>
+    <string name="Login"><font color="#F4DC04">Already registered ? Let’s </font><font color="#81AF02"><b>Login</b></font></string>
+    <string name="Register"><font color="#F4DC04">Don’t have an account? Let’s </font><font color="#81AF02"><b>Register</b></font></string>
+    <string name="mains"><font color="#F4DC04">Product of </font><font color="#81AF02"><b>Team Name</b></font></string>
+
+</resources>
