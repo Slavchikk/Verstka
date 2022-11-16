@@ -58,27 +58,42 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtLog" />
 
-            <EditText
-                android:id="@+id/etPassword"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="40dp"
-                android:background="@drawable/back_bledn"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textColor="#E1FA00"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/dddrs"
+                android:layout_height="76dp"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:layout_editor_absoluteY="292dp"
+                app:layout_constraintTop_toBottomOf="@id/etEmail"
+                tools:ignore="MissingConstraints"
                 android:textColorHint="#E8ED3E"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#E8ED3E"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/back_bledn"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#E1FA00"
+                    android:textColorHint="#E8ED3E"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/txtFogPas"
@@ -91,7 +106,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/dddrs" />
 
     <TextView
         android:id="@+id/txtFogPas2"
@@ -104,7 +119,7 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/dddrs" />
 
 
     <CheckBox

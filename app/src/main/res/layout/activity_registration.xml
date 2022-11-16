@@ -77,53 +77,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/back_bledn"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="#E1FA00"
-        android:textColorHint="#E8ED3E"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ddd"
+                android:layout_height="76dp"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:layout_editor_absoluteY="292dp"
+                app:layout_constraintTop_toBottomOf="@id/etEmail"
+                tools:ignore="MissingConstraints"
+                android:textColorHint="#E8ED3E"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#E8ED3E"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
 
-    <EditText
-        android:id="@+id/etPasswordTwo"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/back_bledn"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="#E1FA00"
-        android:textColorHint="#E8ED3E"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
-
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/back_bledn"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#E1FA00"
+                android:textColorHint="#E8ED3E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/dddr"
+                android:layout_height="76dp"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:layout_editor_absoluteY="292dp"
+                app:layout_constraintTop_toBottomOf="@id/ddd"
+                tools:ignore="MissingConstraints"
+                android:textColorHint="#E8ED3E"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#E8ED3E"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+            <EditText
+                android:id="@+id/etPasswordTwo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/back_bledn"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#E1FA00"
+                android:textColorHint="#E8ED3E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ddd" />
+            </com.google.android.material.textfield.TextInputLayout>
     <CheckBox
         android:id="@+id/renem"
         android:layout_width="50dp"
@@ -131,20 +153,15 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/checks"
-
         android:button="@drawable/back_bledn"
-
         android:onClick="onCheckboxClicked"
-
         android:scaleX="0.5"
-
         android:scaleY="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordTwo" />
+        app:layout_constraintTop_toBottomOf="@+id/dddr" />
 
 
     <TextView
@@ -157,7 +174,7 @@
         android:textColor="#F4DC04"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordTwo" />
+        app:layout_constraintTop_toBottomOf="@+id/dddr" />
 
     <android.widget.Button
         android:id="@+id/btnLogin"
